@@ -1,0 +1,131 @@
+/* experiencia*/
+
+section.experience {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+  width: 80vw;
+  align-items: center;
+}
+
+.experience__box {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.experience__title{
+  color: var(--preto-100, #464646);
+  font-family: "Raleway";
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.experience__text{
+  color: var(--preto-100, #464646);
+ font-family: "Raleway";
+ font-size: 16px;
+ font-style: normal;
+ font-weight: 500;
+  line-height: normal;
+}
+
+.experience__box:nth-child(3),
+.experience__box:nth-child(5){
+  flex-direction: row-reverse;
+}
+
+.experience__info-container {
+  display: flex;
+  flex-direction: column;
+  margin-left: 0.5rem;
+}
+
+.experiencia__botao--repo,
+.experience__botao--demo {
+  font-family: "Raleway";
+  display: inline-flex;
+  padding: 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid var(--azul-100, #2A7AE4);
+}
+
+.experiencia__botao--repo{
+  color:#2a7ae4
+}
+.experience__botao--demo{
+  background-color: #2a7ae4;
+  color:white;
+}
+
+.experience__botao--demo.active {
+  background-color: #2a7ae4;
+  color: white;
+}
+
+/*Tablet*/
+/* @media (min-width: 768px) { */
+@media screen and (max-width: 768px) {
+  /*Experiencia Profesional*/
+
+  section.experience {
+    width: 90vw;
+    height: 55vh;
+  }
+
+  .experience__section__title {
+    font-size: 1.3rem;
+  }
+
+  .experience__box {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .experience__img {
+    width: 90vw;
+  }
+
+  .experiencia__botao--repo,
+  .experience__botao--demo {
+    width: 13vw;
+    font-size: 1.2rem;
+  }
+}
+
+/*Mobile*/
+@media screen and (max-width: 425px) {
+  /*Experiencia Profesional*/
+
+  section.experience {
+    height: 45vh;
+  }
+
+  .experience__section__title {
+    font-size: 1.2rem;
+  }
+
+  /* .experience__img {
+    width:90vw;
+} */
+
+  .experience__title {
+    font-size: 1rem;
+  }
+
+  .experience__text {
+    font-size: 0.8rem;
+  }
+
+  .experiencia__botao--repo,
+  .experience__botao--demo {
+    width: 12vw;
+    font-size: 0.6rem;
+    
+  }
+}
